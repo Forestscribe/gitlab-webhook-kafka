@@ -1,5 +1,5 @@
-== gitlab-webhook-kafka
-
+gitlab-webhook-kafka
+==
 
 This is a simple flask application for forwarding gitlab event hooks to Kafka for independent consumption.
 
@@ -13,7 +13,8 @@ Simplifies Gitlab configuration and make the event stream more reliable.
 (kafka)  =>  PRBot
 (kafka)  =>  MetricsBot
 
-== Development
+Development
+==
 
 This project uses pipenv
 
@@ -22,9 +23,10 @@ This project uses pipenv
     pipenv install
 
 
-== Tests
+Tests
+==
 
-    Tests are e2e only, and based on pytest. They need an available Kafka development server
+Tests are e2e only, and based on pytest. They need an available Kafka development server
 
     export KAFKA_SERVER=<ip>:<port>
     pytests
