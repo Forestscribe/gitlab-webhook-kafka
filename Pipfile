@@ -2,9 +2,11 @@
 url = "https://pypi.python.org/simple"
 verify_ssl = true
 
+[dev-packages]
+pytest = "*"
+
 [packages]
 Flask = "*"
 bson = "*"
-pytest = "*"
 kafka-python = "*"
 gunicorn = "*"
