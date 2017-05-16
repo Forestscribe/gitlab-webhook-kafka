@@ -1,4 +1,4 @@
-from python:2
+from pypy:2-slim
 add Pipfile* /app/
 workdir /app
 run pip install -U pip pipenv && pipenv install
