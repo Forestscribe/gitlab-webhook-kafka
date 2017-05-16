@@ -5,13 +5,13 @@ This is a simple flask application for forwarding gitlab event hooks to Kafka fo
 
 Simplifies Gitlab configuration and make the event stream more reliable.
 
-(GitLab)  == HTTP ==> (gitlab-webhook-kafka) ==> (kafka)
+    (GitLab)  == HTTP ==> (gitlab-webhook-kafka) ==> (kafka)
 
 
-(kafka)  =>  BuildBot
-(kafka)  =>  DependencyFetcherBot
-(kafka)  =>  PRBot
-(kafka)  =>  MetricsBot
+    (kafka)  =>  BuildBot
+    (kafka)  =>  DependencyFetcherBot
+    (kafka)  =>  PRBot
+    (kafka)  =>  MetricsBot
 
 Development
 ==
