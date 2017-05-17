@@ -30,3 +30,13 @@ Tests are e2e only, and based on pytest. They need an available Kafka developmen
 
     export KAFKA_SERVER=<ip>:<port>
     pytests
+
+
+show_last_events.py
+==
+
+This script is a test script which shows the list of events recorded in kafka.
+Also shows basic usage on how to fetch a topic from kafka
+
+    export KAFKA_SERVER=<ip>:<port>
+    python show_last_events.py
