@@ -23,7 +23,10 @@ def forward(kafka_server, debug=False, forward=None):
                              bootstrap_servers=[kafka_server])
     for x in consumer:
         event = bson.loads(x.value)
-        r = requests.post(forward, json=event)
+        typ = event.get('object_kind')
+        if typ in ("push", "tag_push", "merge_request"):
+            codebase = event.get("repository", event.get('target', {})).get("name")
+            r = requests.post(forward, params={'codebase': codebase}, json=event)
         print(r.content)
 
 
